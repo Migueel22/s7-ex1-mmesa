@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>session 07</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Session 7</h1>
+      <h2>Formulario de inscripcion a torneo de videojuegos</h2>
+    </header>
+    <main>
+      <form method="get">
+        <label for="nameInput">Nombre Completo:</label>
+        <input id="nameInput" name="nameInput" type="text" required />
+
+        <label for="emailInput">Email:</label>
+        <input id="emailInput" name="emailInput" type="email" required />
+
+        <label for="ageInput">Edad:</label>
+        <input id="ageInput" name="ageInput" type="number" min="16" />
+
+        <label for="nicknameInput">Nickname:</label>
+        <input
+          id="nicknameInput"
+          name="nicknameInput"
+          type="text"
+          minlength="3"
+          maxlength="15"
+          required
+        />
+
+        <label for="passInput">Contraseña:</label>
+        <input id="passInput" name="passInput" type="password" required />
+
+        <label for="videojuegoSelect">Videojuego:</label>
+        <select name="videojuego" id="videojuegoSelect">
+          <option value="Valorant">Valorant</option>
+          <option value="Fornite">Fornite</option>
+          <option value="Fifa27">Fifa27</option>
+        </select>
+
+        <fieldset>
+          <legend>Plataforma</legend>
+          <label for="pcRadio">PC</label>
+          <input
+            id="pcRadio"
+            name="plataforma"
+            type="radio"
+            value="PC"
+          />
+          <label for="PlayStationRadio">PlayStation</label>
+          <input
+            id="PlayStationRadio"
+            name="plataforma"
+            type="radio"
+            value="playstation"
+          />
+          <label for="XBOXRadio">XBOX</label>
+          <input
+            id="XBOXRadio"
+            name="plataforma"
+            type="radio"
+            value="XBOX"
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>Disponibilidad Horaria</legend>
+          <label for="MañanaCheckbox">Mañana</label>
+          <input
+            id="MañanaCheckbox"
+            name="MañanaCheckbox"
+            type="checkbox"
+            value="Mañana"
+          />
+          <label for="TardeCheckbox">Tarde</label>
+          <input
+            id="TardeCheckbox"
+            name="TardeCheckbox"
+            type="checkbox"
+            value="Tarde"
+          />
+          <label for="NocheCheckbox">Noche</label>
+          <input
+            id="NocheCheckbox"
+            name="NocheCheckbox"
+            type="checkbox"
+            value="Noche"
+          />
+        </fieldset>
+
+        <label for="dateInput">Fecha de nacimiento:</label>
+        <input id="dateInput" name="dInput" type="date" />
+
+        <label for="chapaText">Comentarios adicionales:</label>
+        <textarea name="chapa" id="chapaText"></textarea>
+
+        <div>
+          <input id="normasCheckbox" name="normasCheckbox" type="checkbox" required />
+          <label for="normasCheckbox">Acepto las <a href="https://valorantesports.com/es-ES/news/valorant-community-competition-guidelines" target="_blank">normas</a></label>
+        </div>
+
+        <button type="submit">Inscribirse</button>
+        <button type="reset">Limpiar formulario</button>
+      </form>
+    </main>
+  </body>
+</html>
